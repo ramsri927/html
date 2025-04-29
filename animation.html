@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            width: 500px;
+            height: 500px;
+            background-color:yellow;
+            position: relative;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: moving;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes moving {
+            100% {
+                top: 0;
+                left: 400;
+            }
+
+            /* 25% {
+                top: 0;
+                left: 400px;
+            }
+
+            50%{
+                top: 400px;
+                left: 400px;
+            }
+
+            75%{
+                top: 400px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
